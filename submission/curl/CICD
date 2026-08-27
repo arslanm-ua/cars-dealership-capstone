@@ -1,0 +1,244 @@
+build-and-test	Set up job	﻿2026-08-27T10:59:16.5966214Z Current runner version: '2.336.0'
+build-and-test	Set up job	2026-08-27T10:59:16.5985424Z ##[group]Runner Image Provisioner
+build-and-test	Set up job	2026-08-27T10:59:16.5986217Z Hosted Compute Agent
+build-and-test	Set up job	2026-08-27T10:59:16.5986727Z Version: 20260819.586
+build-and-test	Set up job	2026-08-27T10:59:16.5987281Z Commit: 3cc4a88dfa507ef76119ad1bb3eccc6378bb2b76
+build-and-test	Set up job	2026-08-27T10:59:16.5987880Z Build Date: 2026-08-18T23:20:18Z
+build-and-test	Set up job	2026-08-27T10:59:16.5988459Z Worker ID: {76fb3ea4-68dd-4b19-a26e-688610734bd1}
+build-and-test	Set up job	2026-08-27T10:59:16.5989031Z Azure Region: westus3
+build-and-test	Set up job	2026-08-27T10:59:16.5989484Z ##[endgroup]
+build-and-test	Set up job	2026-08-27T10:59:16.5990578Z ##[group]Operating System
+build-and-test	Set up job	2026-08-27T10:59:16.5991075Z Ubuntu
+build-and-test	Set up job	2026-08-27T10:59:16.5991505Z 24.04.4
+build-and-test	Set up job	2026-08-27T10:59:16.5991962Z LTS
+build-and-test	Set up job	2026-08-27T10:59:16.5992370Z ##[endgroup]
+build-and-test	Set up job	2026-08-27T10:59:16.5993043Z ##[group]Runner Image
+build-and-test	Set up job	2026-08-27T10:59:16.5993545Z Image: ubuntu-24.04
+build-and-test	Set up job	2026-08-27T10:59:16.5994016Z Version: 20260823.283.1
+build-and-test	Set up job	2026-08-27T10:59:16.5994948Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260823.283/images/ubuntu/Ubuntu2404-Readme.md
+build-and-test	Set up job	2026-08-27T10:59:16.5996397Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260823.283
+build-and-test	Set up job	2026-08-27T10:59:16.5997203Z ##[endgroup]
+build-and-test	Set up job	2026-08-27T10:59:16.5998198Z ##[group]GITHUB_TOKEN Permissions
+build-and-test	Set up job	2026-08-27T10:59:16.5999810Z Contents: read
+build-and-test	Set up job	2026-08-27T10:59:16.6000302Z Metadata: read
+build-and-test	Set up job	2026-08-27T10:59:16.6000759Z Packages: read
+build-and-test	Set up job	2026-08-27T10:59:16.6001203Z ##[endgroup]
+build-and-test	Set up job	2026-08-27T10:59:16.6003530Z Secret source: Actions
+build-and-test	Set up job	2026-08-27T10:59:16.6004447Z Prepare workflow directory
+build-and-test	Set up job	2026-08-27T10:59:16.6321723Z Prepare all required actions
+build-and-test	Set up job	2026-08-27T10:59:16.6365526Z Getting action download info
+build-and-test	Set up job	2026-08-27T10:59:16.9376322Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+build-and-test	Set up job	2026-08-27T10:59:17.1218971Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+build-and-test	Set up job	2026-08-27T10:59:17.3394561Z Complete job name: build-and-test
+build-and-test	Checkout repository	﻿2026-08-27T10:59:17.3949275Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build-and-test	Checkout repository	2026-08-27T10:59:17.3956586Z ##[group]Run actions/checkout@v4
+build-and-test	Checkout repository	2026-08-27T10:59:17.3957326Z with:
+build-and-test	Checkout repository	2026-08-27T10:59:17.3957824Z   repository: arslanm-ua/cars-dealership-capstone
+build-and-test	Checkout repository	2026-08-27T10:59:17.3961118Z   token: ***
+build-and-test	Checkout repository	2026-08-27T10:59:17.3961548Z   ssh-strict: true
+build-and-test	Checkout repository	2026-08-27T10:59:17.3961971Z   ssh-user: git
+build-and-test	Checkout repository	2026-08-27T10:59:17.3962442Z   persist-credentials: true
+build-and-test	Checkout repository	2026-08-27T10:59:17.3963046Z   clean: true
+build-and-test	Checkout repository	2026-08-27T10:59:17.3963537Z   sparse-checkout-cone-mode: true
+build-and-test	Checkout repository	2026-08-27T10:59:17.3964048Z   fetch-depth: 1
+build-and-test	Checkout repository	2026-08-27T10:59:17.3964485Z   fetch-tags: false
+build-and-test	Checkout repository	2026-08-27T10:59:17.3964947Z   show-progress: true
+build-and-test	Checkout repository	2026-08-27T10:59:17.3965382Z   lfs: false
+build-and-test	Checkout repository	2026-08-27T10:59:17.3965849Z   submodules: false
+build-and-test	Checkout repository	2026-08-27T10:59:17.3966385Z   set-safe-directory: true
+build-and-test	Checkout repository	2026-08-27T10:59:17.3966909Z   allow-unsafe-pr-checkout: false
+build-and-test	Checkout repository	2026-08-27T10:59:17.3967839Z ##[endgroup]
+build-and-test	Checkout repository	2026-08-27T10:59:17.4801244Z Syncing repository: arslanm-ua/cars-dealership-capstone
+build-and-test	Checkout repository	2026-08-27T10:59:17.4803906Z ##[group]Getting Git version info
+build-and-test	Checkout repository	2026-08-27T10:59:17.4805126Z Working directory is '/home/runner/work/cars-dealership-capstone/cars-dealership-capstone'
+build-and-test	Checkout repository	2026-08-27T10:59:17.4806839Z [command]/usr/bin/git version
+build-and-test	Checkout repository	2026-08-27T10:59:17.4856519Z git version 2.55.0
+build-and-test	Checkout repository	2026-08-27T10:59:17.4874534Z ##[endgroup]
+build-and-test	Checkout repository	2026-08-27T10:59:17.4884559Z Temporarily overriding HOME='/home/runner/work/_temp/44159590-bb6b-40e3-9824-07c4d8a909b7' before making global git config changes
+build-and-test	Checkout repository	2026-08-27T10:59:17.4886482Z Adding repository directory to the temporary git global config as a safe directory
+build-and-test	Checkout repository	2026-08-27T10:59:17.4888497Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cars-dealership-capstone/cars-dealership-capstone
+build-and-test	Checkout repository	2026-08-27T10:59:17.4933536Z Deleting the contents of '/home/runner/work/cars-dealership-capstone/cars-dealership-capstone'
+build-and-test	Checkout repository	2026-08-27T10:59:17.4937921Z ##[group]Initializing the repository
+build-and-test	Checkout repository	2026-08-27T10:59:17.4943479Z [command]/usr/bin/git init /home/runner/work/cars-dealership-capstone/cars-dealership-capstone
+build-and-test	Checkout repository	2026-08-27T10:59:17.5042239Z hint: Using 'master' as the name for the initial branch. This default branch name
+build-and-test	Checkout repository	2026-08-27T10:59:17.5043978Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build-and-test	Checkout repository	2026-08-27T10:59:17.5045387Z hint: to use in all of your new repositories, which will suppress this warning,
+build-and-test	Checkout repository	2026-08-27T10:59:17.5046558Z hint: call:
+build-and-test	Checkout repository	2026-08-27T10:59:17.5047163Z hint:
+build-and-test	Checkout repository	2026-08-27T10:59:17.5047896Z hint: 	git config --global init.defaultBranch <name>
+build-and-test	Checkout repository	2026-08-27T10:59:17.5048708Z hint:
+build-and-test	Checkout repository	2026-08-27T10:59:17.5049523Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build-and-test	Checkout repository	2026-08-27T10:59:17.5050684Z hint: 'development'. The just-created branch can be renamed via this command:
+build-and-test	Checkout repository	2026-08-27T10:59:17.5051652Z hint:
+build-and-test	Checkout repository	2026-08-27T10:59:17.5052242Z hint: 	git branch -m <name>
+build-and-test	Checkout repository	2026-08-27T10:59:17.5053009Z hint:
+build-and-test	Checkout repository	2026-08-27T10:59:17.5053887Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build-and-test	Checkout repository	2026-08-27T10:59:17.5055505Z Initialized empty Git repository in /home/runner/work/cars-dealership-capstone/cars-dealership-capstone/.git/
+build-and-test	Checkout repository	2026-08-27T10:59:17.5058369Z [command]/usr/bin/git remote add origin https://github.com/arslanm-ua/cars-dealership-capstone
+build-and-test	Checkout repository	2026-08-27T10:59:17.5091886Z ##[endgroup]
+build-and-test	Checkout repository	2026-08-27T10:59:17.5093343Z ##[group]Disabling automatic garbage collection
+build-and-test	Checkout repository	2026-08-27T10:59:17.5094526Z [command]/usr/bin/git config --local gc.auto 0
+build-and-test	Checkout repository	2026-08-27T10:59:17.5116342Z ##[endgroup]
+build-and-test	Checkout repository	2026-08-27T10:59:17.5117394Z ##[group]Setting up auth
+build-and-test	Checkout repository	2026-08-27T10:59:17.5121348Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-test	Checkout repository	2026-08-27T10:59:17.5145056Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-test	Checkout repository	2026-08-27T10:59:17.7034408Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-test	Checkout repository	2026-08-27T10:59:17.7059955Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-test	Checkout repository	2026-08-27T10:59:17.7228765Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-test	Checkout repository	2026-08-27T10:59:17.7256815Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-test	Checkout repository	2026-08-27T10:59:17.7416678Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build-and-test	Checkout repository	2026-08-27T10:59:17.7442595Z ##[endgroup]
+build-and-test	Checkout repository	2026-08-27T10:59:17.7443591Z ##[group]Fetching the repository
+build-and-test	Checkout repository	2026-08-27T10:59:17.7450634Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +e6a7251e43ee1087fc9b9c31e1365f69d56e4dfa:refs/remotes/origin/main
+build-and-test	Checkout repository	2026-08-27T10:59:18.4905673Z From https://github.com/arslanm-ua/cars-dealership-capstone
+build-and-test	Checkout repository	2026-08-27T10:59:18.4907409Z  * [new ref]         e6a7251e43ee1087fc9b9c31e1365f69d56e4dfa -> origin/main
+build-and-test	Checkout repository	2026-08-27T10:59:18.4911170Z ##[endgroup]
+build-and-test	Checkout repository	2026-08-27T10:59:18.4912633Z ##[group]Determining the checkout info
+build-and-test	Checkout repository	2026-08-27T10:59:18.4914434Z ##[endgroup]
+build-and-test	Checkout repository	2026-08-27T10:59:18.4915847Z [command]/usr/bin/git sparse-checkout disable
+build-and-test	Checkout repository	2026-08-27T10:59:18.5684054Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build-and-test	Checkout repository	2026-08-27T10:59:18.5708009Z ##[group]Checking out the ref
+build-and-test	Checkout repository	2026-08-27T10:59:18.5710481Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build-and-test	Checkout repository	2026-08-27T10:59:18.5802196Z Switched to a new branch 'main'
+build-and-test	Checkout repository	2026-08-27T10:59:18.5806916Z branch 'main' set up to track 'origin/main'.
+build-and-test	Checkout repository	2026-08-27T10:59:18.5810895Z ##[endgroup]
+build-and-test	Checkout repository	2026-08-27T10:59:18.5844646Z [command]/usr/bin/git log -1 --format=%H
+build-and-test	Checkout repository	2026-08-27T10:59:18.5863347Z e6a7251e43ee1087fc9b9c31e1365f69d56e4dfa
+build-and-test	Set up Python	﻿2026-08-27T10:59:18.6174603Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build-and-test	Set up Python	2026-08-27T10:59:18.6179534Z ##[group]Run actions/setup-python@v5
+build-and-test	Set up Python	2026-08-27T10:59:18.6180716Z with:
+build-and-test	Set up Python	2026-08-27T10:59:18.6181635Z   python-version: 3.11
+build-and-test	Set up Python	2026-08-27T10:59:18.6182660Z   check-latest: false
+build-and-test	Set up Python	2026-08-27T10:59:18.6190856Z   token: ***
+build-and-test	Set up Python	2026-08-27T10:59:18.6191813Z   update-environment: true
+build-and-test	Set up Python	2026-08-27T10:59:18.6192919Z   allow-prereleases: false
+build-and-test	Set up Python	2026-08-27T10:59:18.6193941Z   freethreaded: false
+build-and-test	Set up Python	2026-08-27T10:59:18.6194870Z ##[endgroup]
+build-and-test	Set up Python	2026-08-27T10:59:18.7330600Z ##[group]Installed versions
+build-and-test	Set up Python	2026-08-27T10:59:18.7745895Z (node:2011) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-test	Set up Python	2026-08-27T10:59:18.7749641Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-test	Set up Python	2026-08-27T10:59:18.7751997Z Successfully set up CPython (3.11.16)
+build-and-test	Set up Python	2026-08-27T10:59:18.7754574Z ##[endgroup]
+build-and-test	Install dependencies	﻿2026-08-27T10:59:18.7934036Z ##[group]Run python -m pip install --upgrade pip
+build-and-test	Install dependencies	2026-08-27T10:59:18.7935402Z ^[[36;1mpython -m pip install --upgrade pip^[[0m
+build-and-test	Install dependencies	2026-08-27T10:59:18.7936601Z ^[[36;1mpip install -r requirements.txt^[[0m
+build-and-test	Install dependencies	2026-08-27T10:59:18.7937670Z ^[[36;1mpip install flake8^[[0m
+build-and-test	Install dependencies	2026-08-27T10:59:18.8014063Z shell: /usr/bin/bash -e {0}
+build-and-test	Install dependencies	2026-08-27T10:59:18.8015107Z env:
+build-and-test	Install dependencies	2026-08-27T10:59:18.8016317Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.16/x64
+build-and-test	Install dependencies	2026-08-27T10:59:18.8017845Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig
+build-and-test	Install dependencies	2026-08-27T10:59:18.8019288Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+build-and-test	Install dependencies	2026-08-27T10:59:18.8020571Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+build-and-test	Install dependencies	2026-08-27T10:59:18.8021894Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+build-and-test	Install dependencies	2026-08-27T10:59:18.8023561Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib
+build-and-test	Install dependencies	2026-08-27T10:59:18.8024731Z ##[endgroup]
+build-and-test	Install dependencies	2026-08-27T10:59:23.4520690Z Requirement already satisfied: pip in /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages (26.2.1)
+build-and-test	Install dependencies	2026-08-27T10:59:24.6429335Z Collecting Django==4.2.30 (from -r requirements.txt (line 1))
+build-and-test	Install dependencies	2026-08-27T10:59:24.6958672Z   Downloading django-4.2.30-py3-none-any.whl.metadata (4.2 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:24.7324988Z Collecting django-cors-headers==4.9.0 (from -r requirements.txt (line 2))
+build-and-test	Install dependencies	2026-08-27T10:59:24.7357747Z   Downloading django_cors_headers-4.9.0-py3-none-any.whl.metadata (16 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:24.7566985Z Collecting gunicorn==23.0.0 (from -r requirements.txt (line 3))
+build-and-test	Install dependencies	2026-08-27T10:59:24.7596827Z   Downloading gunicorn-23.0.0-py3-none-any.whl.metadata (4.4 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:24.7845331Z Collecting requests==2.32.5 (from -r requirements.txt (line 4))
+build-and-test	Install dependencies	2026-08-27T10:59:24.7876714Z   Downloading requests-2.32.5-py3-none-any.whl.metadata (4.9 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:24.8092212Z Collecting whitenoise==6.11.0 (from -r requirements.txt (line 5))
+build-and-test	Install dependencies	2026-08-27T10:59:24.8131048Z   Downloading whitenoise-6.11.0-py3-none-any.whl.metadata (3.7 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:24.8573680Z Collecting asgiref<4,>=3.6.0 (from Django==4.2.30->-r requirements.txt (line 1))
+build-and-test	Install dependencies	2026-08-27T10:59:24.8603789Z   Downloading asgiref-3.12.1-py3-none-any.whl.metadata (9.4 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:24.9103661Z Collecting sqlparse>=0.3.1 (from Django==4.2.30->-r requirements.txt (line 1))
+build-and-test	Install dependencies	2026-08-27T10:59:24.9136726Z   Downloading sqlparse-0.6.0-py3-none-any.whl.metadata (6.0 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.1346828Z Collecting packaging (from gunicorn==23.0.0->-r requirements.txt (line 3))
+build-and-test	Install dependencies	2026-08-27T10:59:25.1377280Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.2438844Z Collecting charset_normalizer<4,>=2 (from requests==2.32.5->-r requirements.txt (line 4))
+build-and-test	Install dependencies	2026-08-27T10:59:25.2469518Z   Downloading charset_normalizer-3.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (45 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.2683734Z Collecting idna<4,>=2.5 (from requests==2.32.5->-r requirements.txt (line 4))
+build-and-test	Install dependencies	2026-08-27T10:59:25.2712114Z   Downloading idna-3.19-py3-none-any.whl.metadata (9.2 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.2953286Z Collecting urllib3<3,>=1.21.1 (from requests==2.32.5->-r requirements.txt (line 4))
+build-and-test	Install dependencies	2026-08-27T10:59:25.2983036Z   Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.3606553Z Collecting certifi>=2017.4.17 (from requests==2.32.5->-r requirements.txt (line 4))
+build-and-test	Install dependencies	2026-08-27T10:59:25.3635275Z   Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.3719996Z Downloading django-4.2.30-py3-none-any.whl (8.0 MB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.4372569Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.0/8.0 MB 129.9 MB/s  0:00:00
+build-and-test	Install dependencies	2026-08-27T10:59:25.4405562Z Downloading django_cors_headers-4.9.0-py3-none-any.whl (12 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.4455112Z Downloading gunicorn-23.0.0-py3-none-any.whl (85 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.4503329Z Downloading requests-2.32.5-py3-none-any.whl (64 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.4564860Z Downloading whitenoise-6.11.0-py3-none-any.whl (20 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.4615255Z Downloading asgiref-3.12.1-py3-none-any.whl (25 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.4667203Z Downloading charset_normalizer-3.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (262 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.4720136Z Downloading idna-3.19-py3-none-any.whl (68 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.4776881Z Downloading urllib3-2.7.0-py3-none-any.whl (131 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.4841120Z Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.5121822Z Downloading sqlparse-0.6.0-py3-none-any.whl (50 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.5169667Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:25.6009393Z Installing collected packages: whitenoise, urllib3, sqlparse, packaging, idna, charset_normalizer, certifi, asgiref, requests, gunicorn, Django, django-cors-headers
+build-and-test	Install dependencies	2026-08-27T10:59:27.0415136Z 
+build-and-test	Install dependencies	2026-08-27T10:59:27.0425264Z Successfully installed Django-4.2.30 asgiref-3.12.1 certifi-2026.7.22 charset_normalizer-3.5.1 django-cors-headers-4.9.0 gunicorn-23.0.0 idna-3.19 packaging-26.3 requests-2.32.5 sqlparse-0.6.0 urllib3-2.7.0 whitenoise-6.11.0
+build-and-test	Install dependencies	2026-08-27T10:59:27.8804311Z Collecting flake8
+build-and-test	Install dependencies	2026-08-27T10:59:27.9256932Z   Downloading flake8-7.3.0-py2.py3-none-any.whl.metadata (3.8 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:28.0002069Z Collecting mccabe<0.8.0,>=0.7.0 (from flake8)
+build-and-test	Install dependencies	2026-08-27T10:59:28.0036837Z   Downloading mccabe-0.7.0-py2.py3-none-any.whl.metadata (5.0 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:28.2685070Z Collecting pycodestyle<2.15.0,>=2.14.0 (from flake8)
+build-and-test	Install dependencies	2026-08-27T10:59:28.2718459Z   Downloading pycodestyle-2.14.0-py2.py3-none-any.whl.metadata (4.5 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:28.3799186Z Collecting pyflakes<3.5.0,>=3.4.0 (from flake8)
+build-and-test	Install dependencies	2026-08-27T10:59:28.3835944Z   Downloading pyflakes-3.4.0-py2.py3-none-any.whl.metadata (3.5 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:28.3900087Z Downloading flake8-7.3.0-py2.py3-none-any.whl (57 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:28.4027155Z Downloading mccabe-0.7.0-py2.py3-none-any.whl (7.3 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:28.4075829Z Downloading pycodestyle-2.14.0-py2.py3-none-any.whl (31 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:28.4124956Z Downloading pyflakes-3.4.0-py2.py3-none-any.whl (63 kB)
+build-and-test	Install dependencies	2026-08-27T10:59:28.4402161Z Installing collected packages: pyflakes, pycodestyle, mccabe, flake8
+build-and-test	Install dependencies	2026-08-27T10:59:28.5914941Z 
+build-and-test	Install dependencies	2026-08-27T10:59:28.5924260Z Successfully installed flake8-7.3.0 mccabe-0.7.0 pycodestyle-2.14.0 pyflakes-3.4.0
+build-and-test	Lint with flake8	﻿2026-08-27T10:59:28.6415826Z ##[group]Run flake8 djangoapp djangoproj --max-line-length=110 --exclude=migrations
+build-and-test	Lint with flake8	2026-08-27T10:59:28.6416409Z ^[[36;1mflake8 djangoapp djangoproj --max-line-length=110 --exclude=migrations^[[0m
+build-and-test	Lint with flake8	2026-08-27T10:59:28.6439766Z shell: /usr/bin/bash -e {0}
+build-and-test	Lint with flake8	2026-08-27T10:59:28.6440090Z env:
+build-and-test	Lint with flake8	2026-08-27T10:59:28.6440416Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.16/x64
+build-and-test	Lint with flake8	2026-08-27T10:59:28.6440974Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig
+build-and-test	Lint with flake8	2026-08-27T10:59:28.6441389Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+build-and-test	Lint with flake8	2026-08-27T10:59:28.6441782Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+build-and-test	Lint with flake8	2026-08-27T10:59:28.6442184Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+build-and-test	Lint with flake8	2026-08-27T10:59:28.6442595Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib
+build-and-test	Lint with flake8	2026-08-27T10:59:28.6443131Z ##[endgroup]
+build-and-test	Run Django test suite	﻿2026-08-27T10:59:29.1994235Z ##[group]Run python manage.py test djangoapp
+build-and-test	Run Django test suite	2026-08-27T10:59:29.1994648Z ^[[36;1mpython manage.py test djangoapp^[[0m
+build-and-test	Run Django test suite	2026-08-27T10:59:29.2016039Z shell: /usr/bin/bash -e {0}
+build-and-test	Run Django test suite	2026-08-27T10:59:29.2016382Z env:
+build-and-test	Run Django test suite	2026-08-27T10:59:29.2016704Z   pythonLocation: /opt/hostedtoolcache/Python/3.11.16/x64
+build-and-test	Run Django test suite	2026-08-27T10:59:29.2017123Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib/pkgconfig
+build-and-test	Run Django test suite	2026-08-27T10:59:29.2017578Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+build-and-test	Run Django test suite	2026-08-27T10:59:29.2017955Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+build-and-test	Run Django test suite	2026-08-27T10:59:29.2018376Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.11.16/x64
+build-and-test	Run Django test suite	2026-08-27T10:59:29.2018764Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.11.16/x64/lib
+build-and-test	Run Django test suite	2026-08-27T10:59:29.2019089Z ##[endgroup]
+build-and-test	Run Django test suite	2026-08-27T10:59:30.2523825Z Creating test database for alias 'default'...
+build-and-test	Run Django test suite	2026-08-27T10:59:30.3474607Z Found 7 test(s).
+build-and-test	Run Django test suite	2026-08-27T10:59:30.5168569Z System check identified no issues (0 silenced).
+build-and-test	Run Django test suite	2026-08-27T10:59:30.6614541Z /opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/django/core/handlers/base.py:61: UserWarning: No directory at: /home/runner/work/cars-dealership-capstone/cars-dealership-capstone/server/staticfiles/
+build-and-test	Run Django test suite	2026-08-27T10:59:30.6615892Z   mw_instance = middleware(adapted_handler)
+build-and-test	Run Django test suite	2026-08-27T10:59:31.2836868Z .......
+build-and-test	Run Django test suite	2026-08-27T10:59:31.2837515Z ----------------------------------------------------------------------
+build-and-test	Run Django test suite	2026-08-27T10:59:31.2837960Z Ran 7 tests in 0.767s
+build-and-test	Run Django test suite	2026-08-27T10:59:31.2838147Z 
+build-and-test	Run Django test suite	2026-08-27T10:59:31.2838276Z OK
+build-and-test	Run Django test suite	2026-08-27T10:59:31.2838572Z Destroying test database for alias 'default'...
+build-and-test	Post Set up Python	﻿2026-08-27T10:59:31.3506033Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build-and-test	Post Set up Python	2026-08-27T10:59:31.3507004Z Post job cleanup.
+build-and-test	Post Set up Python	2026-08-27T10:59:31.4479809Z (node:2103) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build-and-test	Post Set up Python	2026-08-27T10:59:31.4480533Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build-and-test	Post Checkout repository	﻿2026-08-27T10:59:31.4633803Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build-and-test	Post Checkout repository	2026-08-27T10:59:31.4634813Z Post job cleanup.
+build-and-test	Post Checkout repository	2026-08-27T10:59:31.5321878Z [command]/usr/bin/git version
+build-and-test	Post Checkout repository	2026-08-27T10:59:31.5351625Z git version 2.55.0
+build-and-test	Post Checkout repository	2026-08-27T10:59:31.5379804Z Temporarily overriding HOME='/home/runner/work/_temp/8d9b2a4e-b73b-4d8e-bb47-d19ad3dc9555' before making global git config changes
+build-and-test	Post Checkout repository	2026-08-27T10:59:31.5381148Z Adding repository directory to the temporary git global config as a safe directory
+build-and-test	Post Checkout repository	2026-08-27T10:59:31.5385178Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/cars-dealership-capstone/cars-dealership-capstone
+build-and-test	Post Checkout repository	2026-08-27T10:59:31.5422317Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build-and-test	Post Checkout repository	2026-08-27T10:59:31.5441146Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build-and-test	Post Checkout repository	2026-08-27T10:59:31.5617625Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build-and-test	Post Checkout repository	2026-08-27T10:59:31.5638992Z http.https://github.com/.extraheader
+build-and-test	Post Checkout repository	2026-08-27T10:59:31.5648362Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build-and-test	Post Checkout repository	2026-08-27T10:59:31.5673365Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build-and-test	Post Checkout repository	2026-08-27T10:59:31.5840328Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build-and-test	Post Checkout repository	2026-08-27T10:59:31.5871486Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build-and-test	Complete job	﻿2026-08-27T10:59:31.6204296Z Cleaning up orphan processes
+build-and-test	Complete job	2026-08-27T10:59:31.6407373Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

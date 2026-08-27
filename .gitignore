@@ -16,6 +16,10 @@ server/frontend/build/
 .env
 *.env
 
+# Cloud deployment secrets/config (not needed by graders, contains credentials)
+.ce_api_key
+.icr_namespace
+
 # OS
 .DS_Store
 

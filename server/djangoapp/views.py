@@ -18,7 +18,7 @@ NODE_URL = os.environ.get("NODE_URL", "http://localhost:3030/").rstrip("/")
 
 def _node_get(path):
     try:
-        resp = requests.get(f"{NODE_URL}{path}", timeout=5)
+        resp = requests.get(f"{NODE_URL}{path}", timeout=15)
         return resp.json(), resp.status_code
     except requests.RequestException as exc:
         logger.error("Node service error on GET %s: %s", path, exc)
@@ -27,7 +27,7 @@ def _node_get(path):
 
 def _node_post(path, payload):
     try:
-        resp = requests.post(f"{NODE_URL}{path}", json=payload, timeout=5)
+        resp = requests.post(f"{NODE_URL}{path}", json=payload, timeout=15)
         return resp.json(), resp.status_code
     except requests.RequestException as exc:
         logger.error("Node service error on POST %s: %s", path, exc)
