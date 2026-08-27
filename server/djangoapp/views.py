@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 from django.http import HttpResponse, JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 
-from .models import CarMake, CarModel
+from .models import CarModel
 
 logger = logging.getLogger(__name__)
 
