@@ -1,0 +1,9 @@
+{
+  "short_name": "Best Cars",
+  "name": "Best Cars Dealership Review",
+  "icons": [],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1b2a4a",
+  "background_color": "#ffffff"
+}

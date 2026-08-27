@@ -1,0 +1,3 @@
+$ curl http://localhost:8000/djangoapp/dealer/7/
+
+{"status": 200, "dealer": {"id": 7, "full_name": "Wichita Premier Auto Group", "short_name": "Wichita Premier Auto", "address": "2900 N Ridge Rd", "city": "Wichita", "state": "Kansas", "zip": "67205", "lat": 37.6872, "long": -97.3301}}

@@ -1,0 +1,23 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+db.sqlite3
+staticfiles/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# React build output (committed selectively where graded — see server/frontend/static)
+server/frontend/build/
+
+# Env files
+.env
+*.env
+
+# OS
+.DS_Store
+
+# Logs
+*.log

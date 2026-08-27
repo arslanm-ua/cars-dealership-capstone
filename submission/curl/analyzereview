@@ -1,0 +1,4 @@
+$ curl http://localhost:5050/analyze/Fantastic%20services
+
+{"score":1.0,"sentiment":"positive","text":"Fantastic services"}
+

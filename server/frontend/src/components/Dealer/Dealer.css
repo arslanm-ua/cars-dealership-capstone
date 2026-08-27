@@ -1,0 +1,102 @@
+.dealer-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dealer-error {
+  color: #b3261e;
+}
+
+.dealer-info {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  padding: 24px;
+}
+
+.dealer-info h1 {
+  margin: 0 0 8px;
+  color: #1b2a4a;
+}
+
+.dealer-info p {
+  margin: 0 0 16px;
+  color: #4a4f5e;
+}
+
+.post-review-button {
+  display: inline-block;
+  background-color: #1b2a4a;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.post-review-button:hover {
+  background-color: #26365c;
+}
+
+.reviews-heading {
+  color: #1b2a4a;
+  margin-bottom: 4px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.review-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  padding: 18px 20px;
+}
+
+.review-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.reviewer-name {
+  font-weight: 700;
+  color: #1b2a4a;
+}
+
+.review-text {
+  margin: 0 0 10px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.review-car-info {
+  margin: 0;
+  color: #6a7189;
+  font-size: 0.9rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.badge-positive {
+  background-color: #2e9e5b;
+}
+
+.badge-negative {
+  background-color: #d9534f;
+}
+
+.badge-neutral {
+  background-color: #8a8f9c;
+}
