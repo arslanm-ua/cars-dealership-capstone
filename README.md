@@ -1,5 +1,8 @@
 # Cars Dealership — Full-Stack Capstone Project
 
+**Repository name:** cars-dealership-capstone
+**Project name:** Cars Dealership — Full-Stack Capstone Project
+
 A responsive web application for **Cars Dealership**, a national car retailer in the U.S. Visitors can
 browse dealership branches across the country, filter them by state, view dealer details and reviews
 (with automatic sentiment analysis), register/log in, and submit their own dealer reviews.
