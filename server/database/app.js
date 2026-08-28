@@ -75,7 +75,7 @@ app.get('/fetchDealers', ensureDbConnected, async (req, res) => {
   }
 });
 
-app.get('/fetchDealers/state/:state', ensureDbConnected, async (req, res) => {
+async function fetchDealersByState(req, res, routeLabel) {
   try {
     const state = req.params.state;
     const dealers = await db
@@ -87,10 +87,18 @@ app.get('/fetchDealers/state/:state', ensureDbConnected, async (req, res) => {
       .toArray();
     res.status(200).json({ status: 200, data: dealers });
   } catch (err) {
-    console.error('ERROR in /fetchDealers/state/:state:', err.message);
+    console.error(`ERROR in ${routeLabel}:`, err.message);
     res.status(500).json({ status: 500, message: 'Internal server error' });
   }
-});
+}
+
+// Two equivalent routes for filtering dealers by state.
+app.get('/fetchDealers/state/:state', ensureDbConnected, (req, res) =>
+  fetchDealersByState(req, res, '/fetchDealers/state/:state')
+);
+app.get('/fetchDealers/:state', ensureDbConnected, (req, res) =>
+  fetchDealersByState(req, res, '/fetchDealers/:state')
+);
 
 app.get('/fetchDealer/:id', ensureDbConnected, async (req, res) => {
   try {
