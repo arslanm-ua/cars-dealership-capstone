@@ -2,18 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import "./Dealer.css";
-
-const sentimentClass = (sentiment) => {
-  const value = (sentiment || "").toLowerCase();
-  if (value.includes("pos")) return "badge badge-positive";
-  if (value.includes("neg")) return "badge badge-negative";
-  return "badge badge-neutral";
-};
-
-const sentimentLabel = (sentiment) => {
-  if (!sentiment) return "Neutral";
-  return sentiment.charAt(0).toUpperCase() + sentiment.slice(1).toLowerCase();
-};
+import { sentimentClass, sentimentLabel } from "../../utils/sentiment";
 
 const Dealer = () => {
   const { id } = useParams();
